@@ -1,5 +1,4 @@
 from abc import ABC
-from aircraft_factory import AircraftFactory
 
 
 # region Aircraft types
@@ -45,9 +44,4 @@ class CivilAircraft(FreighterAircraft):
 aircraft_types = [MilitaryAircraft, FreighterAircraft, CivilAircraft]
 
 # endregion
-AircraftFactory.register_aircraft('IL-2', MilitaryAircraft, flight_range=8000, takeoff_cost=1500,
-                                  cargo_capacity=400, passenger_capacity=1)
-AircraftFactory.register_aircraft('Boeing 747-8', CivilAircraft, flight_range=8000, takeoff_cost=1000,
-                                  cargo_capacity=120000, passenger_capacity=1048)
-AircraftFactory.register_aircraft('Cargojet B767-200', FreighterAircraft, flight_range=3000, takeoff_cost=10000,
-                                  cargo_capacity=45000, passenger_capacity=0)
+
